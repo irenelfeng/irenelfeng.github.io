@@ -1,80 +1,92 @@
 .container
 	ul.nav
-		li 
+		li
 			a(style="color: #d3d3d3;")
 				h1 irene&nbsp;
 					b feng
 				span.no-padding(style="font-size: 12px") learning to code | coding to teach
 		li
-			a(href="#studies")
-				i.fa.fa-pencil-square-o.fa-lg 
-				span studies
+			a(href="#blurb")
+				i.fa.fa-info.fa-lg
+				span blurb
 		li
-			a(href="#coding") 
+			a(href="#coding")
 				i.fa.fa-chevron-left
 				i.fa.fa-heart
-				i.fa.fa-chevron-right 
+				i.fa.fa-chevron-right
 				span.extra-padding coding
-		li 
-			a(href="#quotes") 
+		li
+			a(href="#quotes")
 				i.fa.fa-quote-right.fa-lg
 				span quotes
-		li 
+		li
 			a(href="#music")
 				i.fa.fa-music.fa-lg
 				span hobbies
-.container(style="padding: 0 30px 100px;") 
+.container(style="padding: 0 30px 100px;")
 	.content
 		span
-			a(name="studies")
-				i.fa.fa-pencil-square-o.fa-2x 
-		hr 
-		p I am a Philosophy and Computer Science major at Dartmouth College. My definition of philosophy is to think out all the views of the universe and of man's place in it. Not only can scientific hypotheses verify these truths, but these views determine the basis of science. So what I love to do is not just armchair thinking: it's implementing what we believe to have 
-			i proven
-			|  possible. 
+			a(name="blurb")
+				i.fa.fa-info.fa-2x
+		hr
+		p I graduated from Dartmouth College as a Computer Science and Philosophy major in 2017, and now I work at Facebook. For me, the motive of philosophy is to think out all the views of the universe and of humanity's place in it, and decide what should we do to be better humans. Accordingly, the goal of computer science is implementing things that we want to do to be better humans. My goal is to not forget how closely these two objectives align: it's easy to both get lost in code and lost in thoughts. 
 	.content
 		span
 			a(name="coding")
 				i.fa.fa-chevron-left.fa-lg
 				i.fa.fa-heart.fa-lg
 				i.fa.fa-chevron-right.fa-lg
-		hr 
-		p I've had some experience coding. I really enjoy doing it. I find myself coding until 4am sometimes. The only other thing that I've done until 4am and enjoyed doing was talking with a friend or two about Grigoryan chants, religion, and anime. And there aren't many friends to do that every weekend... Anyways, here are some coding projects I've done, for companies or with smaller groups. 
+		hr
+		p I've had some experience coding. I really enjoy doing it. I find myself coding until 4am sometimes. The only other thing that I've done until 4am and enjoyed doing was talking with a friend or two about Grigoryan chants, religion, and anime. And there aren't many friends to do that every weekend... anyways, here are some coding projects I've done, for companies or with smaller groups.
+		.text-bg(bg="thesis")
+			p
+				h3
+					a(href="http://www.cs.dartmouth.edu/reports/TR2017-819.pdf") Thesis
+					.label (Fall 2016 - Spring 2017)
+				| In my thesis
+				i Using Computational Models to Understand ASD Facial Expression Recognition Patterns, &nbsp;
+				| I applied two computer vision techniques to try and classify a dataset of facial expressions: I extracted Gabor Jet features coupled with LDA, and also used a convolutional neural network. I manipulated both of these models to see whether I could verify hypotheses of how individuals with Autism Spectrum Disorder see faces. 
+		.text-bg(bg="boomsync")
+			p
+				h3
+					a(href="http://boomsync.surge.sh") BoomSync
+					.label (April 2017)
+				| BoomSync was a product of a 12-hour hackathon with friends. It is an interactive game in each level teaches people with the knowledge of javascript basics to code asynchronously. There are various levels, starting from executing a function immediately, to creating callbacks, making promises, and also dealing with rejections. We used the React framework (the designs were made by my friend in Illustrator) to create the game. 
 		.text-bg(bg="darla")
 			p
 				h3
-					a(href="http://darla.dartmouth.edu") darla.dartmouth.edu 
-					.label (Ongoing, Winter 2015-)
-				| I built a website for a pair of Dartmouth professors which allows linguists to upload audio/text files and receive further linguistic analysis on the audio, such as vowel formants. We have servers running in Apache and lighttpd. I used python (via the webpy library) to write the static server-side code. I also wrote bash and cron scripts to run the linguistic analysis files for batch processing. 
+					a(href="http://darla.dartmouth.edu") darla.dartmouth.edu
+					.label (Dec 2015-January 2017)
+				| I built a website for a pair of Dartmouth professors which allows linguists to upload audio/text files and receive further linguistic analysis on the audio, such as vowel formants. We have servers running in Apache and lighttpd. I used python (via the webpy library) to write the static server-side code. I also wrote bash and cron scripts to run the linguistic analysis files for batch processing.
 
 		.text-bg(bg="wonder")
 			h3
-				a(href="https://www.makewonder.com") Wonder Workshop 
+				a(href="https://www.makewonder.com") Wonder Workshop
 				.label (Summer 2016)
-			| I pulled, cleaned, then stored data from Wonder Workshop's Android and iOS apps into a postgreSQL RDBS. I made queries to track overall application usage across different pivots (os platforms, device sizes, and calculated user demographics) as well as user behavior within the application to help drive content revision/bug fixes in the apps. I created a website written in NodeJS + Typescript to display some of the data. The dashboard is 
+			| I pulled, cleaned, then stored data from Wonder Workshop's Android and iOS apps into a postgreSQL RDBS. I made queries to track overall application usage across different pivots (os platforms, device sizes, and calculated user demographics) as well as user behavior within the application to help drive content revision/bug fixes in the apps. I created a website written in NodeJS + Typescript to display some of the data. The dashboard is
 			a(href="http://metrics.makewonder.com") viewable
-			|  for those with authorization (i.e. part of the Wonder Workshop team). 
+			|  for those with authorization (i.e. part of the Wonder Workshop team).
 
 		.text-bg(bg="heartstring")
 			p
 				h3
-					a(href="http://www.heartstring.life") Heartstring 
+					a(href="http://www.heartstring.life") Heartstring
 					.label (Spring 2016)
-				| I and a few other programmers teamed up with Dartmouth business school students to work on Heartstring, a music-discovery app that unites video and sound. It is an app that allows users to take videos/multiple photos and pick different track clips to best accompany the shots. I implemented the Google Cloud Vision API to guess the facial expressions in the shots and match them to music in the app's existing library. I also initiated the move from housing the music files in-app to storing them in a Firebase database.  
+				| I and a few other programmers teamed up with Dartmouth business school students to work on Heartstring, a music-discovery app that unites video and sound. It is an app that allows users to take videos/multiple photos and pick different track clips to best accompany the shots. I implemented the Google Cloud Vision API to guess the facial expressions in the shots and match them to music in the app's existing library. I also initiated the move from housing the music files in-app to storing them in a Firebase database.
 
 		.text-bg(bg="gr")
 			p
 				h3
-					a(href="http://girlrising.com") Girl Rising 
+					a(href="http://girlrising.com") Girl Rising
 					.label (Winter 2015)
 				| I helped build an internal staff website application for Girl Rising that allowed for self-hosted resources and statistics, increasing organization and file-versioning. We housed metadata with MongoDB and stored files in AWS S3 buckets. I worked full-stack on this application, with server written in Scala and client with the AngularJS framework. What I really enjoyed about this experience is that while building the application, I got direct feedback from my coworkers for improvement on features we implement. I even got to use the application myself after collecting demographic research for the company's film launch in India.
 
 		.text-bg(bg="streamline")
 			p
-				h3 
-					a(href="http://streamlinehealthcare.com") Streamline Health 
+				h3
+					a(href="http://streamlinehealthcare.com") Streamline Health
 					.label (Summer 2014)
-				| As a software developer intern, I designed modules for a web-based application that manages Electronic Health Records for physicians, running on the Microsoft SQL Server and .NET framework. I got full stack development experience, building in C# and using Microsoft Visual Studio for the front end. 
+				| As a software developer intern, I designed modules for a web-based application that manages Electronic Health Records for physicians, running on the Microsoft SQL Server and .NET framework. I got full stack development experience, building in C# and using Microsoft Visual Studio for the front end.
 
 
 
@@ -82,46 +94,46 @@
 		span
 			a(name="quotes")
 				i.fa.fa-quote-right.fa-2x
-		hr 
+		hr
 		p I collect lots of quotes! Here are some of the ones I've kept with me over the years.
 
 		.quote
-			| How wide is the present? How deep? How much of it is yours to keep? 
-			h4 - Kurt Vonnegut, 
+			| How wide is the present? How deep? How much of it is yours to keep?
+			h4 - Kurt Vonnegut,
 				i Slaughterhouse-Five
 		.quote
-			| The person who looks forgets that people may look at him. 
-			h4 - Jean Paul Sartre, 
+			| The person who looks forgets that people may look at him.
+			h4 - Jean Paul Sartre,
 				i Baudelaire
 		.quote
-			| Even pain can be confessed, but to confess happiness is to stand naked, delivered to the witness. 
-			h4 - Ayn Rand, 
-				i The Fountainhead 
-		.quote 
-			| In an age when we have more choice, more mobility, more information, more opportunity to fulfill ourselves, how is it that people can prefer to be identical? 
-			h4 - John Brunner, 
-				i The Shockwave Rider 
+			| Even pain can be confessed, but to confess happiness is to stand naked, delivered to the witness.
+			h4 - Ayn Rand,
+				i The Fountainhead
 		.quote
-			| Integrity cannot be purchased. Show up and have the courage to do the right thing. 
+			| In an age when we have more choice, more mobility, more information, more opportunity to fulfill ourselves, how is it that people can prefer to be identical?
+			h4 - John Brunner,
+				i The Shockwave Rider
+		.quote
+			| Integrity cannot be purchased. Show up and have the courage to do the right thing.
 			h4 - Leymah Gbowee
 		.quote
 			| It is only with the heart that one can see rightly; what is essential is invisible to the eye.
-			h4 - Antoine de Saint-Exupéry, 
+			h4 - Antoine de Saint-Exupéry,
 				i The Little Prince
 		.quote
 			| When we live such fragile lives, it's the best way we survive.
-			h4 - All American Rejects, 
-				i Dirty Little Secret 
+			h4 - All American Rejects,
+				i Dirty Little Secret
 		.quote
-			| To love without know how to love wounds the people we love. 
+			| To love without know how to love wounds the people we love.
 			h4 - Thích Nhat Hanh
 		.quote
-			| We do not know if love or hatred scorch us. 
-			h4 - Goethe, 
-				i Faust 
-		.quote 
-			| I have therefore found it necessary to deny knowledge, in order to make room for faith. 
-			h4 - Immanuel Kant, 
+			| We do not know if love or hatred scorch us.
+			h4 - Goethe,
+				i Faust
+		.quote
+			| I have therefore found it necessary to deny knowledge, in order to make room for faith.
+			h4 - Immanuel Kant,
 				i Critique of Pure Reason
 
 		| Send me goodies of your own (names of books, movies, mangas, awesome people, anything really) if you want!
@@ -130,84 +142,84 @@
 		span
 			a(name="music")
 				i.fa.fa-music.fa-2x
-		hr 
-		p I play piano and oboe. In the realm of classical music, Debussy is my man. Stravinsky is making moves on me though. I also listen to a lot of other genres too. Here's an assorted list of old favorites and new loves: 
+		hr
+		p I play piano and oboe. In the realm of classical music, Debussy is my man. Stravinsky is making moves on me though. I also listen to a lot of other genres too. Here's an assorted list of old favorites and new loves:
 		.band
 			h4 Vampire Weekend
 			ul
-				li  
-					i Modern Vampires of the City, 
+				li
+					i Modern Vampires of the City,
 					| each song, in order
-				li 
-					| I think Ur a Contra, 
+				li
+					| I think Ur a Contra,
 					i Contra
-				li 
-					| Walcott, 
+				li
+					| Walcott,
 					i Vampire Weekend
 		.band
-			h4 Punch Brothers 
+			h4 Punch Brothers
 			ul
-				li 
-					| Lots from 
-					i Who's Feeling Young Now? 
+				li
+					| Lots from
+					i Who's Feeling Young Now?
 					| esp. Kid A cover and Don't Get Married Without Me
 		.band
 			h4 Sufjan Stevens
-			ul 
-				li 
-					| He is beautiful. Every single piece is beautiful. 
+			ul
 				li
-					| For more folksy: 
-					i Seven Swans, Carrie and Lowell 
-				li 
-					| For more weird: 
-					i Age of Adz 
+					| He is beautiful. Every single piece is beautiful.
+				li
+					| For more folksy:
+					i Seven Swans, Carrie and Lowell
+				li
+					| For more weird:
+					i Age of Adz
 		.band
-			h4 Portugal. the Man 
-			ul 
+			h4 Portugal. the Man
+			ul
 				li
-					| Creep in a T-Shirt, 
+					| Creep in a T-Shirt,
 					i Evil Friends
 		.band
-			h4 The Sound Defects 
+			h4 The Sound Defects
 			ul
-				li 
+				li
 					i The Iron Horse
-				li 
+				li
 					| New artist for me!
 		.band
 			h4 Nujabes
 			ul
-				li 
-					i Luv(sic) - 
+				li
+					i Luv(sic) -
 					| Yeah I know. Basic.
 		.band
 			h4 Local Natives
-			ul 
+			ul
 				li
 					| They're an old band but I'm just starting to listen.
 				li
-					| Camera Talk, World News, and Airplane,  
+					| Camera Talk, World News, and Airplane,
 					i Gorilla Manor
 		.band
 			h4 Arcade Fire
 			ul
 				li
-					| I used to fall asleep to 
-					i Funeral 
-					| sans Neighborhood #2. Still hate it. 
-				li 
-					| Joan of Arc, Reflektor, and Oh Orpheus, 
+					| I used to fall asleep to
+					i Funeral
+					| sans Neighborhood #2. Still hate it.
+				li
+					| Joan of Arc, Reflektor, and Oh Orpheus,
 					i Reflektor
 
-		
-		.band 
+
+		.band
 			h4 Hellogoodbye
-			ul 
-				li 
+			ul
+				li
 					| Something You Misplaced, The Thoughts That Give Me the Creeps
-					i Would it Kill You? 
-				li 
+					i Would it Kill You?
+				li
 					| Emo rock always has song titles that are too long.
 
 		hr(style="border-top: 2px solid #ddd;")
